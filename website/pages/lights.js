@@ -2,7 +2,6 @@ import Button from '@material-ui/core/Button';
 import React from 'react';
 import Head from 'next/head'
 import CssBaseline from '@material-ui/core/CssBaseline';
-import { Helmet } from 'react-helmet';
 var W3CWebSocket = require('websocket').w3cwebsocket;
 
 var client = new W3CWebSocket('ws://172.16.72.93:8081/', 'echo-protocol');
