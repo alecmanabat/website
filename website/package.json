@@ -13,12 +13,9 @@
   "license": "ISC",
   "dependencies": {
     "@material-ui/core": "^3.0.1",
-    "create-react-class": "^15.6.3",
     "next": "^6.1.1",
     "react": "^16.4.2",
     "react-dom": "^16.4.2",
-    "react-helmet": "^5.2.0",
-    "react-tappable": "^1.0.4",
     "websocket": "^1.0.26"
   }
 }
