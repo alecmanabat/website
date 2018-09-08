@@ -1,1 +1,1 @@
-web: node start.js
+web: cd website && npm run dev
