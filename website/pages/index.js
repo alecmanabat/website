@@ -9,7 +9,8 @@ const Index = () => (
   <Link href="/lights">
     <a style={linkStyle}>Light Controls</a>
   </Link>
-    <p>Hello Next.js</p>
+    <p>Hello</p>
+    <img src="test/bug.jpg" alt=">:[" height="100" width="100">
   </div>
 )
 
