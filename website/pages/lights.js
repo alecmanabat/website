@@ -5,7 +5,7 @@ import CssBaseline from '@material-ui/core/CssBaseline';
 const https = require("https");
 var W3CWebSocket = require('websocket').w3cwebsocket;
 
-var client = new W3CWebSocket('wss://172.16.72.218:8001/', 'echo-protocol');
+var client = new W3CWebSocket('wss://api.alecmanabat.com:8001/', 'echo-protocol');
 var connected = false;
 
 setInterval(function() {
