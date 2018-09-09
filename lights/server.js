@@ -1,10 +1,18 @@
 var SerialPort = require('serialport');
-var WebSocketServer = require('ws').Server;
+const fs = require('fs');
+const https = require('https');
+const WebSocket = require('ws');
+
+const server = new https.createServer({
+  cert: fs.readFileSync('cert.pem'),
+  key: fs.readFileSync('key.pem')
+});
+const wss = new WebSocket.Server({ server });
 
 var portName = "COM3";
 
 var SERVER_PORT = 8081;                 // port number for the webSocket server
-var wss = new WebSocketServer({port: SERVER_PORT}); // the webSocket server
+
 var connections = new Array;            // list of connections to the server
 
 var myPort = new SerialPort(portName, 9600);

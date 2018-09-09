@@ -3,6 +3,11 @@ import React from 'react';
 import Head from 'next/head'
 import CssBaseline from '@material-ui/core/CssBaseline';
 
+setInterval(function() {
+    http.get("http://alec-website.herokuapp.com");
+}, 300000);
+
+
 const linkStyle = {
   marginLeft: 15
 }
