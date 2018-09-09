@@ -2,14 +2,14 @@ import Button from '@material-ui/core/Button';
 import React from 'react';
 import Head from 'next/head'
 import CssBaseline from '@material-ui/core/CssBaseline';
-const http = require("http");
+const https = require("https");
 var W3CWebSocket = require('websocket').w3cwebsocket;
 
-var client = new W3CWebSocket('wss://75.102.137.174:8081/', 'echo-protocol');
+var client = new W3CWebSocket('ws://75.102.137.174:8081/', 'echo-protocol');
 var connected = false;
 
 setInterval(function() {
-    http.get("http://alec-website.herokuapp.com");
+    https.get("http://alec-website.herokuapp.com");
 }, 300000);
 
 client.onerror = function() {
