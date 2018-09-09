@@ -7,7 +7,7 @@ const https = require("https");
 setInterval(function() {
     https.get("https://alec-website.herokuapp.com");
 }, 300000);
-
+//
 
 const linkStyle = {
   marginLeft: 15
