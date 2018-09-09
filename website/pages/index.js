@@ -1,4 +1,7 @@
 import Link from 'next/link'
+import React from 'react';
+import Head from 'next/head'
+import CssBaseline from '@material-ui/core/CssBaseline';
 
 const linkStyle = {
   marginLeft: 15
