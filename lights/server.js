@@ -8,10 +8,9 @@ const server = new https.createServer({
   key: fs.readFileSync('key.pem')
 });
 const wss = new WebSocket.Server({ server });
+server.listen(8081);
 
 var portName = "COM3";
-
-var SERVER_PORT = 8081;                 // port number for the webSocket server
 
 var connections = new Array;            // list of connections to the server
 

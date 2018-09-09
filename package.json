@@ -7,7 +7,7 @@
     "dev": "cd website && next",
     "build": "cd website && next build",
     "start": "cd website && next start -p $PORT",
-	"heroku-postbuild": "npm run build"
+    "heroku-postbuild": "npm run build"
   },
   "keywords": [],
   "author": "",
