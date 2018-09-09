@@ -9,7 +9,7 @@ var client = new W3CWebSocket('ws://75.102.137.174:8081/', 'echo-protocol');
 var connected = false;
 
 setInterval(function() {
-    https.get("http://alec-website.herokuapp.com");
+    https.get("https://alec-website.herokuapp.com");
 }, 300000);
 
 client.onerror = function() {
