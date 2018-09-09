@@ -8,7 +8,6 @@ const server = new https.createServer({
   key: fs.readFileSync('key.pem')
 });
 const wss = new WebSocket.Server({ server });
-server.listen(8081);
 
 var portName = "COM3";
 
@@ -76,3 +75,5 @@ function broadcast(data) {
     connections[c].send(JSON.stringify(data)); // send the data to each connection
   }
 }
+
+server.listen(8081);
