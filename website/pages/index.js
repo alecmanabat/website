@@ -23,7 +23,7 @@ const Index = () => (
                 <a style={linkStyle}>Light Controls</a>
                 </Link>
             <p>Hello</p>
-            <img src="/static/bug.jpg" alt=">:[" height="300" width="300"/>
+            <img src="/static/bug.jpg" alt=">:[" height="300" width="350"/>
           </div>
         }
       </React.Fragment>
