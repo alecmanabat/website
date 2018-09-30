@@ -2,11 +2,12 @@ import Link from 'next/link'
 import React from 'react';
 import Head from 'next/head'
 import CssBaseline from '@material-ui/core/CssBaseline';
+const https = require("https");
 
 setInterval(function() {
-    http.get("http://alec-website.herokuapp.com");
+    https.get("https://alec-website.herokuapp.com");
 }, 300000);
-
+//
 
 const linkStyle = {
   marginLeft: 15
