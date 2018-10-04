@@ -6,6 +6,9 @@ const https = require("https");
 var W3CWebSocket = require('websocket').w3cwebsocket;
 
 var client = new W3CWebSocket('ws://api2.alecmanabat.com:8001/', 'echo-protocol');
+if (!(client.readyState === client.OPEN)) {
+    client = new W3CWebSocket('ws://api.alecmanabat.com:8001/', 'echo-protocol');
+}
 var connected = false;
 
 setInterval(function() {
