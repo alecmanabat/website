@@ -62,6 +62,12 @@ function showError(error) {
 }
 
 wss.on('connection', handleConnection);
+process.on( 'SIGINT', function() {
+  console.log( "\ngracefully shutting down from  SIGINT (Crtl-C)" )
+  // send off signal to arduino
+  sendToSerial("0");
+  process.exit( )
+})
 
 function handleConnection(client) {
   console.log("New Connection");        // you have a new client
