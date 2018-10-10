@@ -66,7 +66,7 @@ process.on( 'SIGINT', function() {
   console.log( "\ngracefully shutting down from  SIGINT (Crtl-C)" )
   // send off signal to arduino
   sendToSerial("0");
-  process.exit( )
+  setTimeout(function () {console.log("shutting down");process.exit()},2000);
 })
 
 function handleConnection(client) {
